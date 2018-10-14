@@ -35,7 +35,7 @@ else
     services.AddDbContext<MyDatabaseContext>(options =>
             options.UseSqlite("Data Source=MvcMovie.db"));
 
-// Automatically perform database migration
+// Automatically perform database migrations
 services.BuildServiceProvider().GetService<MyDatabaseContext>().Database.Migrate();
         }
 
